@@ -1,35 +1,71 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #FAF8F3;
   --foreground: #1C2B2D;
+
   --primary: #E8621A;
   --primary-foreground: #FFFFFF;
+
   --secondary: #2D6A4F;
   --secondary-foreground: #FFFFFF;
+
   --accent: #F4A261;
   --accent-foreground: #1C2B2D;
+
   --muted: #F0EDE6;
   --muted-foreground: #6B7280;
+
   --card: #FFFFFF;
   --card-foreground: #1C2B2D;
+
   --border: #E5E0D8;
   --input: #E5E0D8;
   --ring: #E8621A;
+
   --radius: 0.75rem;
+
   --font-sans: var(--font-plus-jakarta), sans-serif;
   --font-serif: var(--font-dm-serif), serif;
 }
 
+/* Tailwind 4 Theme Tokens */
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-default: var(--radius);
+
+  --font-sans: var(--font-plus-jakarta), sans-serif;
+  --font-serif: var(--font-dm-serif), serif;
+}
+
+
 /* Base Styles */
 @layer base {
-  * {
+ * {
     box-sizing: border-box;
     border-color: var(--border);
-  }
-
-  html {
-    scroll-behavior: smooth;
   }
 
   body {
@@ -38,6 +74,10 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   h1,
