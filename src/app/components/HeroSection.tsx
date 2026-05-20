@@ -167,7 +167,7 @@ export default function HeroSection() {
             {/* Main image card */}
             <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl border border-white/20" style={{ aspectRatio: '4/5' }}>
               <Image
-                src="/assets/images/luxury_hero_property.png"
+                src="/luxury_hero_property.png"
                 alt="Premium luxury villa with infinity pool and stunning architecture — featured property on Nestify"
                 fill
                 className="object-cover"
